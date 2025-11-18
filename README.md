@@ -4,21 +4,21 @@ Course: EE322: Analog and Mixed Signal Circuits (IIT Gandhinagar)
 
 Team: Waveform Wizards
 
-Overview
+# Overview
 
-This project implements a cost-effective, real-time Analog Active Noise Cancellation (ANC) system for headphones. Unlike complex digital solutions involving DSPs, this system utilizes purely analog circuitry to reduce ambient low-frequency noise (such as engine hum or fans) using destructive interference.
+This project implements a cost-effective, real-time Analog Noise Cancellation (ANC) system for headphones. Unlike complex digital solutions involving DSPs, this system utilizes purely analog circuitry to reduce ambient low-frequency noise (such as engine hum or fans) using destructive interference.
 
 The circuit captures external noise via microphones, processes the signal to align phase and amplitude, and sums the inverted "anti-noise" with the user's audio playback.
 
-Team Members
+## Team Members
 
-Swayam Borate
+* Swayam Borate
 
-Parth Dembla
+* Parth Dembla
 
-Shriniket Behera
+* Shriniket Behera
 
-System Architecture
+## System Architecture
 
 The system is designed for a stereo application (Left/Right channels) and consists of five primary stages:
 
@@ -48,15 +48,9 @@ Output Driver:
 
 Drives the headphones via a standard 3.5mm audio jack.
 
-Hardware & Components
+## Hardware & Components
 
 The design is optimized for standard Through-Hole (THT) components for ease of soldering and prototyping.
-
-Component
-
-Type
-
-Function
 
 Op-Amps
 
@@ -88,27 +82,27 @@ Various Resistors/Capacitors
 
 Biasing and RC networks
 
-Software Tools
+## Software Tools
 
 LTspice: Used for initial circuit simulation, transient analysis, and verifying noise cancellation waveforms.
 
 KiCad: Used for schematic capture, footprint assignment, and PCB layout (2-layer board, 100mm x 100mm).
 
-Simulation & Results
+## Simulation & Results
 
 Simulation: LTspice simulations demonstrated successful mixing of the random noise source (simulated ambient noise) with the inverted signal, resulting in significant amplitude reduction at the output node.
 
-PCB Design: A custom PCB was designed in KiCad featuring a stereo layout. The design passed DRC (Design Rules Check) and generated Gerber files ready for fabrication.
+* PCB Design: A custom PCB was designed in KiCad featuring a stereo layout. The design passed DRC (Design Rules Check) and generated Gerber files ready for fabrication.
 
-PCB Fab Estimate: ~₹1901 for 5 boards (Lion Circuits).
+* PCB Fab Estimate: ~₹1901 for 5 boards (Lion Circuits).
 
- Setup & Usage
+ ## Setup & Usage
 
 Power: Connect a dual-rail power supply (±9V) to the VCC+ and VCC- terminals.
 
 Input: Connect your music source (Phone/PC) to the Music In 3.5mm jack.
 
-Calibration:
+## Calibration:
 
 Power on the circuit in a noisy environment.
 
